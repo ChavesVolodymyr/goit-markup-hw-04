@@ -88,7 +88,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
- display: inline block;
+ 
  margin-right: 76px;
 }
 
@@ -119,13 +119,21 @@ img {
   letter-spacing: 0.02em;
     display: block;
     padding: 24px 0;
-
-  
+    
 }
 
 .navigation-item:focus,
 .navigation-item:hover {
   color: #404bbf;
+
+}
+
+.navigation-list::after{
+  content: "";
+  border-radius: 2px;
+    background-color: var(--OCEAN, #404BBF);
+   
+      gap: 20px;
 }
 
 .addres-nav-link {
@@ -161,7 +169,11 @@ display: flex;
     height: 600px;
       padding-top: 188px;
       padding-bottom: 188px;
-}
+      background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office\ 1-min.jpg);
+background-repeat: no-repeat;
+background-position: center;
+
+    }
 
 .hero-container{
 
