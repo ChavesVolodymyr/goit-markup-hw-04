@@ -101,8 +101,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  
- 
 }
 
 .logo-studio:focus,
@@ -128,12 +126,20 @@ img {
 
 }
 
-.navigation-list::after{
-  content: "";
+.studio{
+  position: relative;
+  
+}
+.studio::after{
+position: absolute;
+content: "";
   border-radius: 2px;
-    background-color: var(--OCEAN, #404BBF);
-   
-      gap: 20px;
+  background-color: var(--OCEAN, #404BBF);
+  width: 48px;
+    height: 4px;
+  position: absolute;
+ bottom: 0px;
+  
 }
 
 .addres-nav-link {
@@ -145,8 +151,7 @@ display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  
-}
+  }
 
 .nav-link {
   color: var(--SLATE, #434455);
@@ -154,9 +159,7 @@ display: flex;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  
- 
-}
+  }
 .nav-link:focus,
 .nav-link:hover {
   color: #404bbf;
@@ -172,11 +175,9 @@ display: flex;
       background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office\ 1-min.jpg);
 background-repeat: no-repeat;
 background-position: center;
-
     }
 
 .hero-container{
-
 display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,9 +223,7 @@ max-width: 496px;
 /* !!!!!!!!!!!!!!!!!!!!! */
 
 /* ************TiTEL****************** */
-.titel-cont{
-  
-}
+.titel-cont{}
 
 .section-text{
   padding: 120px 0;
@@ -238,11 +237,28 @@ max-width: 496px;
     gap: 24px;
 }
 
+.titel-icon{
+  width: 100%;
+  height: 112px;
+  border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.icon{
+  fill: transparent;
+  
+}
+
 .titel-cont-descr{
   display: flex;
 width: calc((100% - 72px) / 3);
 flex-direction: column;
   align-items: flex-start;
+  gap: 8px;
 }
 
 .titel-text {
@@ -319,11 +335,42 @@ margin-bottom: 8px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .only-text{
   padding: 32px 0;
 }
+
+.team-icon {
+  display: flex;
+  text-align: center;
+    justify-content: center;
+  gap: 24px;
+}
+
+.team-icon-list { 
+  width: 40px;
+    height: 40px;
+   
+}
+
+.team-icon-link {
+ 
+
+}
+.icon-team-border{
+ background-color: #4D5AE5;
+  width: 100%;
+    height: 100%;
+  border-radius: 50%;
+  /* display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-shrink: 0; */
+
+}
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
 /* ??------------PORTFOLIO------------?? */
 .portfolio {
